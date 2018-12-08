@@ -9,20 +9,22 @@ block content
                 li= error.msg
 
     form(action="." method="POST")
-        label(for="name") Name;
+        label(for="name") Name
         input(
             type="text"
             id="name"
             name="name"
+            class="form-control"
             value=data.name
         )
 
-        label(for="email") Email;
+        label(for="email") Email
         input(
             type="text"
             id="email"
             name="email"
+            class="form-control"
             value=data.email
         )
 
-        input(type="submit" value="Submit")
+        input(type="submit" value="Submit" class="btn btn-lg btn-primary btn-block") 
